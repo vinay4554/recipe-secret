@@ -32,7 +32,8 @@
   color: white;
   .post-names {
     padding-left: 20px;
-    color: #ffffff;
+    // color: #ffffff;
+    color: black;
     font-family: "Roboto", sans-serif;
   }
   .post-icon {
@@ -83,6 +84,7 @@
   .posts-section {
     width: 100%;
     flex-direction: column-reverse;
+    padding-bottom: 15px;
   }
   .posts {
     width: 90%;

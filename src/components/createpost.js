@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { createpost } from "../actions/post";
@@ -15,7 +15,7 @@ const Postform = () => {
   const location = useLocation();
   const [imageurl, setimageurl] = useState("");
   const [user, setuser] = useState(JSON.parse(localStorage.getItem("profile")));
-
+  const elem = useRef();
   useEffect(() => {
     setuser(JSON.parse(localStorage.getItem("profile")));
   }, [location]);
@@ -29,7 +29,7 @@ const Postform = () => {
       .post("https://api.cloudinary.com/v1_1/dbwszu6iw/image/upload", formdata)
       .then((response) => setimageurl(response?.data?.secure_url));
 
-    selectedfile("");
+    elem.current.value = null;
     handlesubmit();
   };
   const handlesubmit = (e) => {
@@ -106,6 +106,7 @@ const Postform = () => {
       <input
         type="file"
         name="file"
+        ref={elem}
         onChange={(e) => setselectedFile(e.target.files[0])}
       />
       <button onClick={uploadfile}>Upload File</button>
