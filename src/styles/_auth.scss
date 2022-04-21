@@ -1,0 +1,58 @@
+.auth-form {
+  background-color: #ffffff;
+  width: 40%;
+  margin: 25px auto;
+  padding: 20px;
+
+  #lock-icon {
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+  }
+  .auth-title {
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  fieldset {
+    border-radius: 5px;
+    margin: 5px 0;
+    position: relative;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+  }
+  button[type="submit"] {
+    width: 35%;
+    margin: 20px 0 10px;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  .switch {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+  #showpass {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .auth-form {
+    width: 90%;
+    margin: 20px 5%;
+    padding: 10px;
+  }
+}

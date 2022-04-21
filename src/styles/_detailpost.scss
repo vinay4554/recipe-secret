@@ -1,0 +1,55 @@
+.btn {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  #icon {
+    margin-right: 10px;
+  }
+  button {
+    padding: 5px 15px;
+    text-align: center;
+    background-color: rgb(68, 68, 241);
+    border: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.post-detail {
+  position: relative;
+  background-color: white;
+  width: 60vw;
+  margin: 20px auto 10px;
+  padding-bottom: 20px;
+  .title {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    h2 {
+      text-align: center;
+      padding-top: 10px;
+      font-size: 30px;
+    }
+  }
+  .item-detail {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .post-detail {
+    width: 90%;
+    .btn {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .title {
+      h2 {
+        padding-top: 50px;
+      }
+    }
+  }
+}

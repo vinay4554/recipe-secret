@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 75%;
+  margin: 10px auto 0;
+  background-color: rgba(101, 100, 107, 0.6);
+  justify-content: space-between;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+
+  .app-icon {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    h1 {
+      margin: 0;
+    }
+  }
+  .login-here {
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+    }
+  }
+
+  .user-details {
+    display: flex;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+    .avatar {
+      border-radius: 50%;
+      font-size: 20px;
+      padding: 5px 10px;
+      background-color: aquamarine;
+    }
+    .username {
+      font-size: 20px;
+    }
+    .logout-btn {
+      button {
+        padding: 8px 20px;
+        text-align: center;
+        background-color: blue;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

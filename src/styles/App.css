@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-image: url("../images/bg_home1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin: 10px auto 0;
+  background-color: rgba(101, 100, 107, 0.6);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.nav .app-icon h1 {
+  margin: 0;
+}
+
+.nav .login-here a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.posts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 10px auto 0;
+  color: #00ffff;
+  padding: 0 10px;
+}
+/*# sourceMappingURL=App.css.map */
